@@ -88,6 +88,7 @@ function lrc2srt(lrc){
 }
 
 function convert(){
+  alert('Starting the conversion...')
   if(Object.keys(filelists).length == 1){
   	let srt = lrc2srt(Object.values(filelists)[0]);
   	let blob = new Blob([srt], {type:"text/plain"});
