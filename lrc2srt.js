@@ -33,7 +33,7 @@ function handle(file){
     Textarea.innerText = this.result;
   };
   reader.onerror = function(e){
-    alert("读取文件失败！");
+    alert("Failed to read file！");
     //console.log(e);
   }
   reader.readAsText(file);
@@ -106,7 +106,7 @@ function convert(){
       Downloader.download = "srts.zip";
       Downloader.href = URL.createObjectURL(content);
       Downloader.style.display = 'inline';
-      Textarea.innerText = "请点击链接下载ZIP文件";
+      Textarea.innerText = "Please click on the link to download the ZIP file";
     });
   }
 }
